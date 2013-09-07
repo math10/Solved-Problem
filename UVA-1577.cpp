@@ -67,7 +67,6 @@ typedef unsigned long long int64u;
 #define OC printf("Case %d:",cs);
 #define FI freopen("in.txt","r",stdin);
 #define FO freopen("out.txt","w",stdout);
-#include <conio.h>
 //}
 //}
 template <class T, class U> inline T max (T &a, U &b) { return a > b ? a : b; }
