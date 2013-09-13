@@ -84,14 +84,11 @@ int main() {
     while(scanf("%d%d",&n,&k)!=EOF) {
         int len = 2*n*k;
         rep(i,len) arr[i] = II;
-        //rep(i,len) cout << arr[i] <<' ';
-        //NL;
         sort(arr,arr+len);
         int64 low = arr[1] - arr[0],high = arr[len-1] - arr[0];
         int64 ans = 9999999999LL;
         while(low<=high) {
             int64 mid = (low+high)>>1;
-            //cout << mid << endl;
             int64 cnt = 0;
             int64 take = 0;
             rep(i,len-1) {
