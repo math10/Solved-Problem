@@ -92,11 +92,11 @@ int main() {
     scanf("%d",&t);
     For( cs,t ) {
         v.clear();
-        int n,k,q;
-        scanf("%ld%ld%ld",&n,&k,&q);
+        int n = II,k = II,q = II;
+        
 
         For(i,k) {
-            scanf("%ld",&given[i]);
+            given[i] = II;
             sorted[i]=given[i];
         }
         sorted[k+1] = n+1;
