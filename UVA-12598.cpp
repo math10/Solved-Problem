@@ -106,17 +106,13 @@ int main() {
         For(i,k)
         v.push_back(v[i-1]+sorted[i+1] - sorted[i] - 1);
         printf("Case %d:\n",cs);
-        //rep(i,k+1)
-        //cout << arr[i] <<' ';
+        
         rep(i,q) {
             int num;
             scanf("%ld",&num);
-
             if(num<=k) printf("%ld\n",given[num]);
-
             else {
                 int tmp = num - k;
-                //cout << tmp;
                 low = lower_bound(all(v),tmp);
                 tmp-=v[low-v.begin()-1];
                 printf("%ld\n", sorted[low-v.begin()] +tmp);
