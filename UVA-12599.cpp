@@ -125,7 +125,6 @@ int main(){
             printf(" %d",w[i]);
             NL;
             cout << l - cnt;
-
             for(int i = take ; i < b.size(); i++)
                 printf(" %d",b[i]);
             printf(" %d\n",w[w.size()-1]);
