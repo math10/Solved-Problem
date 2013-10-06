@@ -81,7 +81,6 @@ int main(){
     double l , w , h , theta ,theta1 ;
     while(cin >> l >> w >> h >> theta ){
         double theta1 = theta * PI / 180.00   ;
-        //cout << theta << endl;
         double a = l ;
         double b = l * tan( theta1) ;
         double c = sqrt( a*a + b * b  );
