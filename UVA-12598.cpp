@@ -109,13 +109,13 @@ int main() {
         
         rep(i,q) {
             int num;
-            scanf("%ld",&num);
-            if(num<=k) printf("%ld\n",given[num]);
+            scanf("%d",&num);
+            if(num<=k) printf("%d\n",given[num]);
             else {
                 int tmp = num - k;
                 low = lower_bound(all(v),tmp);
                 tmp-=v[low-v.begin()-1];
-                printf("%ld\n", sorted[low-v.begin()] +tmp);
+                printf("%d\n", sorted[low-v.begin()] +tmp);
             }
         }
     }
