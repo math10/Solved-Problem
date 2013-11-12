@@ -124,7 +124,7 @@ int main()
         bool flag = true;
         forstl(it,V){
             cnt++;
-            if(in_box(it->a,it->b,x)){
+            if(in_box(it->a,it->b,x)){ //remove = in in_box
                cout << "Point "<< id <<" is contained in figure "<< cnt << endl;
                flag = false;
             }
