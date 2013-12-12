@@ -93,15 +93,6 @@ int EQ(double d){
     if ( fabs(d) < EPS ) return 0;
     return d > EPS ? 1 : -1 ;
 }
-struct edge{
-    int u,v,w;
-    edge( int a ,int b, int c){
-        u = a , v = b , w = c;
-    }
-    edge(){};
-};
-
-bool operator < ( edge a ,edge b){  return a.w < b.w ; }
 
 int prev[mx];
 int Parent(int i){
