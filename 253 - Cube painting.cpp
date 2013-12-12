@@ -83,10 +83,6 @@ template <class T, class U> inline T swap (T &a, U &b) {
 //int dx[]={1,1,0,-1,-1,-1,0,1};int dy[]={0,1,1,1,0,-1,-1,-1};//8 direction
 //int dx[]={2,1,-1,-2,-2,-1,1,2};int dy[]={1,2,2,1,-1,-2,-2,-1};//Knight Direction
 //int dx[6]={2,1,-1,-2,-1,1};int dy[6]={0,1,1,0,-1,-1}; //Hexagonal Direction
-#include <iostream>
-#include <string>
-
-using namespace std;
 
 struct Cube {
     string dice;
