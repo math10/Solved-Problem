@@ -118,6 +118,11 @@ int main() {
     freopen ("in.txt", "r", stdin);
     freopen ("output.txt", "w", stdout);
 #endif
+    flag = true;
+    memo(dp,-1);
+    rep(i,MX) {
+        G[i] = call(i,0);
+    }
     while(true) {
         int tmp = 0;
         rep(i,6) {
@@ -145,14 +150,7 @@ int main() {
         flag = false;
         memo(dp,-1);
         rep(i,MX) {
-
             A[i] = call(i,0);
-        }
-        flag = true;
-        memo(dp,-1);
-        rep(i,MX) {
-
-            G[i] = call(i,0);
         }
         int ans = INF,id;
         rep(i,MX) {
